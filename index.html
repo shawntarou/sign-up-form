@@ -26,17 +26,23 @@
       </p>
     </aside>
     <main>
-      <p>This is a test sign-form. Sign up <em>now</em> to get started</p>
+      <h2 id="call-to-action">
+        Hey, what's up bro. This is a test form. One like you've never seen
+        before. A form that'll keep you up at night thinking, "Should I have
+        signed up?" Well now's your chance bucko, so don't mess this up.<br /><br />Sign
+        up <em>now</em> to get started.
+      </h2>
       <div id="form-container">
+        <h2 id="form-header">Let's do this!</h2>
         <form class="sign-up-form">
           <div class="form-group">
             <label for="fname">First Name</label>
-            <input id="fname" name="fname" type="text" />
+            <input id="fname" name="fname" type="text" required />
           </div>
 
           <div class="form-group">
             <label for="lname">Last Name</label>
-            <input id="lname" name="lname" type="text" />
+            <input id="lname" name="lname" type="text" required />
           </div>
 
           <div class="form-group">
@@ -45,24 +51,43 @@
               id="email"
               name="email"
               type="email"
-              placeholder="santiago@example.com"
+              placeholder="hikaru@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label row="tel">Phone</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="###-###-####"
+              required
             />
           </div>
 
           <div class="form-group">
             <label row="password">Password</label>
-            <input id="password" name="password" type="password" />
+            <input id="password" name="password" type="password" required />
           </div>
 
           <div class="form-group">
             <label row="confpassword">Confirm Password</label>
-            <input id="confpassword" name="confpassword" type="password" />
+            <input
+              id="confpassword"
+              name="confpassword"
+              type="password"
+              required
+            />
           </div>
         </form>
       </div>
 
       <button>Create Account</button>
-      <p>Already have an account? <a href="#">Log in</a></p>
+      <p class="account-holder-login">
+        Already have an account? <a href="#">Log in</a>
+      </p>
     </main>
   </body>
 </html>
