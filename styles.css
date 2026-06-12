@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "nijikon";
+  src:
+    url("fonts/nijikon_japan-webfont.woff2") format("woff2"),
+    url("fonts/nijikon_japan-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font:
+    0.8em "nijikon",
+    sans-serif;
+}
